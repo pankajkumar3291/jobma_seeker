@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/backArrowImage"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/backArrowImage"
+            android:text="Jobs"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+
+    <link.fls.swipestack.SwipeStack
+        android:id="@+id/swipeStack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/re1"
+        android:layout_below="@+id/relativeToolbar"
+        app:stack_rotation="10"
+        app:stack_size="3" />
+
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/dfdfdf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imageCancelLeft"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/cancel_tik" />
+
+
+            <ImageView
+                android:id="@+id/imageAcceptRight"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_toRightOf="@+id/imageCancelLeft"
+                android:src="@drawable/ok_tik" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linFilter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/dfdfdf"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/filter" />
+
+
+            <TextView
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="Filter"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

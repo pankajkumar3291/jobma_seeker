@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/accept_reject_rescheduled_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tvJobma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jobma"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJobma"
+            android:gravity="center"
+            android:text="@string/select_an_action"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInterviewNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainRelative"
+        android:layout_marginTop="0.5dp">
+
+        <!--app:cardCornerRadius="@dimen/_2sdp"-->
+        <!--app:cardElevation="@dimen/_1sdp"-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/interview_now"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardInterviewNow"
+        android:layout_marginTop="0.5dp">
+
+        <!--app:cardCornerRadius="@dimen/_5sdp"-->
+        <!--app:cardElevation="@dimen/_3sdp"-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/colorCancelBtn"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

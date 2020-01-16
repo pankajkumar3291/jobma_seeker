@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorInviationBackground">
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/mWebView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/mWebView"
+                app:layout_constraintEnd_toEndOf="@+id/mWebView"
+                app:layout_constraintStart_toStartOf="@+id/mWebView"
+                app:layout_constraintTop_toTopOf="@+id/mWebView"
+                app:srcCompat="@drawable/no_thumbail" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mWebView"
+                app:layout_constraintEnd_toEndOf="@+id/mWebView"
+                app:layout_constraintStart_toStartOf="@+id/mWebView"
+                app:layout_constraintTop_toTopOf="@+id/mWebView"
+                app:srcCompat="@drawable/video_play" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/tvProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:indeterminate="false"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="20dp"
+        android:progress="0"
+        android:text="Instructions"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16sdp"
+        android:visibility="gone" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/liMain"
+        android:layout_below="@+id/tvProgress"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:scrollbars="none">
+
+        <!--android:background="@color/colorWhite"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_video_rounded_bg"
+            android:padding="@dimen/_5sdp">
+
+
+            <TextView
+                android:id="@+id/tvInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="Instructions"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <TextView
+                android:id="@+id/tvHOwToRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInstructions"
+                android:text="How to Record or Upload Your Video Profile"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvInsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInstructions"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="How to Record or Upload Your Video Profile"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal" />
+
+
+            <RelativeLayout
+                android:id="@+id/rePointOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInsText"
+                android:padding="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/imgPintOne"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/invi_circle" />
+
+
+                <TextView
+                    android:id="@+id/tvPointOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/imgPintOne"
+                    android:text="You can record a video or upload a pre-recorded video."
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/tvPointOne"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorReetuBorder" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rePointTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rePointOne"
+                android:padding="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/imgPintTwo"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/invi_circle" />
+
+
+                <TextView
+                    android:id="@+id/tvPointTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/imgPintTwo"
+                    android:text="@string/to_record_a_new_pitch_using_jobma_click_record_video"
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/tvPointTwo"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorReetuBorder" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rePointThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rePointTwo"
+                android:padding="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/imgPintThree"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/invi_circle" />
+
+
+                <TextView
+                    android:id="@+id/tvPointThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/imgPintThree"
+                    android:text="@string/when_the_recording_window_opens_you_may_need_to_allow_jobma_to_use_your_webcam_in_the_flash_settings"
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/tvPointThree"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorReetuBorder" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rePointFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rePointThree"
+                android:padding="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/imgPintFour"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/invi_circle" />
+
+
+                <TextView
+                    android:id="@+id/tvPointFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/imgPintFour"
+                    android:text="Click the record button, you have 120 seconds to record your video pitch."
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/tvPointFour"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorReetuBorder" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rePointFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rePointFour"
+                android:padding="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/imgPintFive"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:src="@drawable/invi_circle" />
+
+
+                <TextView
+                    android:id="@+id/tvPointFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/imgPintFive"
+                    android:text="When you are satisfied with your pitch, stop the recording and hit publish to make it your default video."
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/tvPointFive"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorReetuBorder"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/liMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:id="@+id/linearRecordVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/record_video_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/record_video" />
+
+
+            <TextView
+                android:id="@+id/tvRecordVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="RECORD VIDEO"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearUploadVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/record_video_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/upload" />
+
+
+            <TextView
+                android:id="@+id/tvUploadVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="UPLOAD VIDEO"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

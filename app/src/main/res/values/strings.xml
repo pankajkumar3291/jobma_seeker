@@ -1,0 +1,146 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Jobma</string>
+
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="or">or</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="register_here">Register here</string>
+    <string name="forgot_your_password">Forgot Your Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="enterYourEmailAddressHere">Enter your email address here</string>
+    <string name="signup">Signup</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="mobile_number">Mobile no</string>
+    <string name="password_register">Password</string>
+    <string name="confirm_passwordForSetting">Confirm Password</string>
+    <string name="submit_register">SUBMIT</string>
+    <string name="phone_code">Select country</string>
+    <string name="jobma">Jobma</string>
+    <string name="select_an_action">Select an action</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="rescheduled">Reschedule</string>
+    <string name="cancel">Cancel</string>
+    <string name="interview_now">Interview Now</string>
+    <string name="interview_date">Interview Date</string>
+    <string name="select_your_timezone">Select your timezone*</string>
+    <string name="interview_start_time">Interview start time*</string>
+    <string name="interview_end_time">Interview end time*</string>
+    <string name="message">Message</string>
+    <string name="submit_reschedule">Submit</string>
+    <string name="filter">Filter</string>
+
+
+    <!-- FACEBOOK KEYS-->
+
+    <string name="facebook_app_id">1496023400527705</string>
+    <string name="fb_login_protocol_scheme">fb1496023400527705</string>
+    <string name="finished">FINISHED</string>
+    <string name="post">Post</string>
+    <string name="enter_your_feedback">Enter your feedback</string>
+    <string name="apply">Apply</string>
+
+    <string name="update_linkedin_app_title">Update LinkedIn app</string>
+    <string name="update_linkedin_app_message">To connect with LinkedIn you need to update LinkedIn app. Would you like to do it?</string>
+    <string name="update_linkedin_app_download">Download</string>
+    <string name="update_linkedin_app_cancel">Cancel</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="save">save</string>
+
+
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+
+    <string name="error_cleartext_not_permitted">Cleartext traffic not permitted</string>
+
+    <string name="error_generic">Playback failed</string>
+
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+
+    <string name="error_unrecognized_stereo_mode">Unrecognized stereo mode</string>
+
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+
+    <string name="download_start_error">Failed to start download</string>
+
+    <string name="download_playlist_unsupported">This demo app does not support downloading playlists</string>
+
+    <string name="download_drm_unsupported">This demo app does not support downloading protected content</string>
+
+    <string name="download_scheme_unsupported">This demo app only supports downloading http streams</string>
+
+    <string name="download_ads_unsupported">IMA does not support offline ads</string>
+
+    <string name="prefer_extension_decoders">Prefer extension decoders</string>
+
+
+    <string name="random_abr">Enable random ABR</string>
+    <string name="qr">QR</string>
+    <string name="report_an_issue">Report an issue</string>
+    <string name="job_alert">Job Alerts</string>
+    <string name="add_edit_job_alert">Add/Edit Job Alert</string>
+
+
+    <string-array name="array_name">
+        <item>Select Job Type</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+
+    <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="to_record_a_new_pitch_using_jobma_click_record_video">To record a new pitch using JOBMA, click \"Record video\".</string>
+    <string name="when_the_recording_window_opens_you_may_need_to_allow_jobma_to_use_your_webcam_in_the_flash_settings">When the recording window opens, you may need to \"allow\" JOBMA to use your webcam in the flash settings.</string>
+
+    <string-array name="salary_type">
+        <item>Select Salary Type</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+    </string-array>
+
+
+    <string name="host">dev.jobma.com</string>
+    <string name="port">9999</string>C
+
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#2DBFD9</color>
+
+
+    <!--SHAHZEB DEFINED THE COLOR FOR USE-->
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorlogin">#2DBFD9</color>
+    <color name="colorRegister">#219FB6</color>
+    <color name="colorStatusBar">#2DBFD9</color>
+
+    <color name="colorGrey">#B2B4B4</color>
+    <color name="colorForgotYourPassword">#2DBFD9</color>
+
+    <color name="colorToolbar">#2DBFD9</color>
+    <color name="colorProfileImage">#EDEDED</color>
+    <color name="colorViewBackground">#209FB5</color>
+    <color name="colorRecyclerviewBackground">#EBE7E4</color>
+
+    <color name="colorInviationBackground">#EBE7E4</color>
+
+    <color name="colorCancelBtn">#F06157</color>
+    <color name="colorApplicationHistory">#E9E4E8</color>
+
+    <color name="colorCancel">#616161</color>
+    <color name="colorArcPregress">#74E1F2</color>
+
+    <color name="colorApplyScreen">#F8F5F5</color>
+
+    <color name="colorLightYellow">#EDD9A2</color>
+
+    <color name="colorLightGrey">#F7F3F3</color>
+
+
+    <color name="colorLightBlack">#656565</color>
+
+    <color name="colorSubjective">#F0EFEF</color>
+
+    <color name="colorGreenProgressbar">#6CB246</color>
+
+    <color name="colorDeeplinkBackground">#F6F6F6</color>
+
+
+</resources>

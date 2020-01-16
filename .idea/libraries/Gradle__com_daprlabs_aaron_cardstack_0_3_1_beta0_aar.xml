@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.daprlabs.aaron:cardstack:0.3.1-beta0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83a13211846be24368df181b83acf0fe/jetified-cardstack-0.3.1-beta0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83a13211846be24368df181b83acf0fe/jetified-cardstack-0.3.1-beta0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daprlabs.aaron/cardstack/0.3.1-beta0/92b8f6ee5e848eace4b30a05d70ddef5f9ccaeca/cardstack-0.3.1-beta0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daprlabs.aaron/cardstack/0.3.1-beta0/25452bebad56701842be51e92c11b1eb2d2a8830/cardstack-0.3.1-beta0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorReetuBacground">
+
+
+    <TextView
+        android:id="@+id/tvNoResumeAvail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No resume available please click on Add button to upload the resume"
+        android:textColor="#333"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp">
+
+
+        <LinearLayout
+            android:id="@+id/linSalaryDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:layout_marginRight="@dimen/_9sdp"
+            android:background="@drawable/profile_background_v"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvResume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="resume_1003.pdf"
+                    android:textColor="@color/colorReetuBlue"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <ImageView
+                    android:id="@+id/imageEdit"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/edit_gray" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvLast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Last Modified : "
+                    android:textColor="#999"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/tvLastModifiedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#999"
+                    android:textSize="@dimen/_11sdp"
+                    tools:text="20/06/2019" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvDefau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Default Status : "
+                    android:textColor="#999"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/tvDefaultStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#999"
+                    android:textSize="@dimen/_11sdp"
+                    tools:text="Hidden" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/plus_side" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ADD" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

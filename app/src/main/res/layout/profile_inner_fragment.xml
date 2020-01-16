@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorReetuBacground"
+        android:padding="@dimen/_7sdp">
+
+
+        <LinearLayout
+            android:id="@+id/linProfileSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_background_v"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvProSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Profile Summary"
+                    android:textColor="@color/colorLB"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageEditProfileSummary"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/edit_gray" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1ssp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/colorReetuBorder" />
+
+
+            <TextView
+                android:id="@+id/tvProfileSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:textColor="@color/colorLG"
+                android:textSize="@dimen/_11sdp"
+                tools:text="shahzeb summary" />
+
+
+            <TextView
+                android:id="@+id/tvReadMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="READ MORE"
+                android:textColor="@color/colorReetuBlue"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linSalaryDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linProfileSummary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/profile_background_v"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSalDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Salary Details"
+                    android:textColor="@color/colorLB"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageSalaryDetails"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/edit_gray" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1ssp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/colorReetuBorder" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="CTC"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:textStyle="normal"
+                android:id="@+id/tvCTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="IND 40000 per months" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Expected Salary"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvExpectedCTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="IND 60000 per months" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linAddressDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linSalaryDetails"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/profile_background_v"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAddDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Address Details"
+                    android:textColor="#333"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageAddressDetails"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/edit_gray" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1ssp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/colorReetuBorder" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Current Location"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvCurrentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Chandigarh" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Desired Location"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvDesiredLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Dehli (NCR)" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Willing to Relocate"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvWillingToRelocate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Yes" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linOthresDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linAddressDetails"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/profile_background_v"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvOthDet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Other Details"
+                    android:textColor="#333"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imageOthresDetails"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/edit_gray" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1ssp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/colorReetuBorder" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Functional Area"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvFunctionalArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="HR/Adminstration/IR, Installation, Maintanaince and repair" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Industry"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvIndustry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Advertising/PR/MR/Events" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Employment Status"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvEmploymentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Green Card" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Desired Job Type"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvDesiredJobType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Part Time" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Open for Contract"
+                android:textColor="#333"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/tvOpenForContract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#999"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="visible"
+                tools:text="Yes" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

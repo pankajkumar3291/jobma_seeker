@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorForgotYourPassword"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvHeadingProfileSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:text="Profile Summary"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="normal" />
+
+
+        <ImageView
+            android:id="@+id/imageCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:src="@drawable/icon_cancel" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainRelative"
+        android:padding="@dimen/_8sdp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edProfileSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Profile summary"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp"
+                app:backgroundTint="@color/colorGrey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edPS"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+
+            <Button
+
+                android:id="@+id/btnApply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/profile_summary_background"
+                android:text="SUBMIT"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

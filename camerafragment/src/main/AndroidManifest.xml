@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.florent37.camerafragment">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application>
+        <activity android:name=".PreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFullscreen"
+            />
+    </application>
+</manifest>

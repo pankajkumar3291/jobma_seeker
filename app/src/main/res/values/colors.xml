@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#2DBFD9</color>
+
+
+    <!--SHAHZEB DEFINED THE COLOR FOR USE-->
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorlogin">#2DBFD9</color>
+    <color name="colorRegister">#219FB6</color>
+    <color name="colorStatusBar">#2DBFD9</color>
+
+    <color name="colorGrey">#B2B4B4</color>
+    <color name="colorForgotYourPassword">#2DBFD9</color>
+
+    <color name="colorToolbar">#2DBFD9</color>
+    <color name="colorProfileImage">#EDEDED</color>
+    <color name="colorViewBackground">#209FB5</color>
+    <color name="colorRecyclerviewBackground">#EBE7E4</color>
+
+    <color name="colorInviationBackground">#EBE7E4</color>
+
+    <color name="colorCancelBtn">#F06157</color>
+    <color name="colorApplicationHistory">#E9E4E8</color>
+
+    <color name="colorCancel">#616161</color>
+    <color name="colorArcPregress">#74E1F2</color>
+
+    <color name="colorApplyScreen">#F8F5F5</color>
+
+    <color name="colorLightYellow">#FBE5B5</color>
+
+    <color name="colorLightGrey">#F7F3F3</color>
+
+
+    <color name="colorLightBlack">#656565</color>
+
+    <color name="colorSubjective">#ece8e5</color>
+
+    <color name="colorGreenProgressbar">#6CB246</color>
+
+    <color name="colorDeeplinkBackground">#F6F6F6</color>
+
+    <color name="colorPrivacyBackground">#FFF3EDED</color>
+
+    <color name="colorProfileAudio">#928A8A</color>
+    <color name="colorNewVideoQuestion">#FFF8F8F8</color>
+
+    <color name="colorReetuBorder">#ece8e5</color>
+    <color name="colorReetuBlue">#28c0da</color>
+    <color name="colorReetuBacground">#ece8e5</color>
+    <color name="colorAddSkillbackground">#F3F3F3</color>
+
+
+    <color name="colorLB">#333</color>
+    <color name="colorLG">#999</color>
+
+    <color name="colorSelection">#EDEDED</color>
+
+    <color name="colorPicker">#E9E5E2</color>
+
+    <color name="colorSplash">#2d313b</color>
+
+    <color name="colorTinCurv">#EEEEEE</color>
+
+    <color name="colorOval">#5D5C5C</color>
+    <color name="colorDarkGold">#BEA160</color>
+    <color name="colorEssayBG">#F9F9F9</color>
+
+    <color name="colorBG">#2A2D37</color>
+
+
+    <color name="com_facebook_button_background_color_focused_disabled">#3C5A99</color>
+    <color name="com_facebook_button_background_color_focused">#3C5A99</color>
+    <color name="com_facebook_button_border_color_focused">#3C5A99</color>
+
+
+    <color name="colorLiveInterview">#E6E1DD</color>
+
+
+</resources>

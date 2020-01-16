@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorlogin"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/backarr"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/backarr"
+            android:text="Reason for reschedule"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvInterviewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/interview_date"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/colorReetuBorder" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearOne"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvSelectYourTimeZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:drawableRight="@drawable/dwon_arrow"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/select_your_timezone"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/colorReetuBorder" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearTwo"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInterviewStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/interview_start_time"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/colorReetuBorder" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearThree"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInterviewEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/interview_end_time"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/colorReetuBorder" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearFour"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+
+        android:orientation="vertical">
+
+        <!--android:background="@drawable/message_bg"-->
+
+        <EditText
+
+            android:id="@+id/edMessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:backgroundTint="@color/colorReetuBorder"
+            android:gravity="center|left"
+            android:hint="@string/message"
+            android:padding="@dimen/_5sdp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearFive"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/ripple_sign_in_background"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/submit_reschedule"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

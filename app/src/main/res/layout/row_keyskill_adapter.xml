@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/tags_background"
+        android:gravity="center"
+        android:padding="@dimen/_3sdp"
+        android:text="Tags"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

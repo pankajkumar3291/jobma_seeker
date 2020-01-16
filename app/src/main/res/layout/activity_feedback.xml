@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorlogin"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backarr"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFeedbackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/backarr"
+            android:text="Feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/reParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your application has been successfully submitted for"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvJobTitleForJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                tools:text="hello SHahzeb" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/viewOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linear"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/colorReetuBorder" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewOne"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="We would like to have your feedback to improve our interview process"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:numStars="5"
+                android:rating="0.0"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:stepSize="1.0"
+                android:theme="@style/RatingBar" />
+
+
+            <!--android:backgroundTint="@color/colorGrey"-->
+            <!--android:progressTint="#FFA500"-->
+
+
+            <EditText
+                android:id="@+id/edFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:backgroundTint="@color/colorGrey"
+                android:hint="@string/enter_your_feedback"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColorHint="@color/colorGrey"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/next_skip_btnbg"
+        android:text="@string/post"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13sdp" />
+
+
+</RelativeLayout>

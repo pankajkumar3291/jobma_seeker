@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@+id/mainRelative"
+    android:background="@color/colorApplicationHistory">
+
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/filterLinear">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerApplicationHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp" />
+
+
+        <TextView
+            android:id="@+id/tvNoDataAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No data available"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filterLinear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/filter" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Filter"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLB"
+            android:textSize="@dimen/_11sdp" />
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressApplicationHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/filterLinear"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="3dp"
+        android:indeterminateTint="@color/colorlogin"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

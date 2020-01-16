@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tcking:giraffeplayer2:0.1.25@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6499d185f14e25c5334e70517e4ec136/jetified-giraffeplayer2-0.1.25/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6499d185f14e25c5334e70517e4ec136/jetified-giraffeplayer2-0.1.25/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tcking/giraffeplayer2/0.1.25/c62cf7e27ce1353d3391ba49053a48b79d73274c/giraffeplayer2-0.1.25-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tcking/giraffeplayer2/0.1.25/2d5a26da1b2cddd7a02408eef4d497cca85a7581/giraffeplayer2-0.1.25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

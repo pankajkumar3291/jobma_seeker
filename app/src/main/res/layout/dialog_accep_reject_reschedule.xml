@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/accept_reject_rescheduled_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tvJobma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jobma"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJobma"
+            android:gravity="center"
+            android:text="@string/select_an_action"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/cardAccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainRelative"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/accept"
+            android:textColor="@color/colorlogin"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardReject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardAccept"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/reject"
+            android:textColor="@color/colorlogin"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRescheduled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardReject"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/rescheduled"
+            android:textColor="@color/colorlogin"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCancelForAccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardRescheduled"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/colorCancelBtn"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

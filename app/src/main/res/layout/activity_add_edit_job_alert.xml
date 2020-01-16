@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/backArrowImage"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/back_arrow" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/add_edit_job_alert"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15sdp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeToolbar"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:imeOptions="actionGo"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:orientation="vertical">
+
+
+                    <com.smartit.jobSeeker.multiSelectSpinnerWithLimit.MultipleSelectionSpinnerIndustry
+                        android:id="@+id/spIndustry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorGrey" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edMinExp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Min Experience"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            app:backgroundTint="@color/colorGrey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edMaxExp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Max Experience"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            app:backgroundTint="@color/colorGrey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:orientation="vertical">
+
+                    <com.smartit.jobSeeker.multiSelectSpinnerWithLimit.MultipleSelectionSpinnerCurrencyType
+                        android:id="@+id/spCurrencyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorGrey" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edMinSalary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Min Salary"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            app:backgroundTint="@color/colorGrey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edMaxSalary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Max Salary"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            app:backgroundTint="@color/colorGrey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:orientation="vertical">
+
+                    <com.smartit.jobSeeker.multiSelectSpinnerWithLimit.MultipleSelectionSpinnerSalaryType
+                        android:id="@+id/spSalaryType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/colorGrey" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edKeySkills"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Key Skills"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            app:backgroundTint="@color/colorGrey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvItalic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Note: Use commas to separate multiple key skills"
+                        android:textColor="@color/colorLG"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Notifications"
+                        android:textColor="@color/colorLG" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal">
+
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbDaily"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/colorAccent"
+                                android:text="Daily"
+                                android:textColor="@color/colorLG" />
+
+                            <RadioButton
+                                android:id="@+id/rbWeekly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/colorAccent"
+                                android:text="Weekly"
+                                android:textColor="@color/colorLG" />
+
+
+                            <RadioButton
+                                android:id="@+id/rbMonthly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/colorAccent"
+                                android:text="Monthly"
+                                android:textColor="@color/colorLG" />
+
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/alert_job_save"
+            android:text="SAVE"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

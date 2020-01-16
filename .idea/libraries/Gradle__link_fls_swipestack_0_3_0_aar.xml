@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: link.fls:swipestack:0.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/685a29cf12b57a3af04d34038eb61876/jetified-swipestack-0.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/685a29cf12b57a3af04d34038eb61876/jetified-swipestack-0.3.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/link.fls/swipestack/0.3.0/ff89092d5ac93239db2b55baccaef47510d520f2/swipestack-0.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/link.fls/swipestack/0.3.0/f6fdb148af9ed43018857fec268d17b6efad9787/swipestack-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

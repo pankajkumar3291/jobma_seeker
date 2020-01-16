@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/backArrowImage"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/back_arrow" />
+
+
+            <TextView
+                android:id="@+id/tvSignUpT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/signup"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15sdp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeToolbar"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_12sdp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionGo"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionGo"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:hint="@string/email"
+                    android:imeOptions="actionGo"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edConfirmEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_email"
+                    android:imeOptions="actionGo"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvPhoneCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:drawableRight="@drawable/dwon_arrow"
+                        android:gravity="center"
+                        android:text="Phone Code"
+                        android:textColor="@color/colorLG"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <View
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorGrey" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/tvPhoneCode"
+                        android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edMobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone Number"
+                            android:imeOptions="actionGo"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/_15sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            app:backgroundTint="@color/colorGrey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tillPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_register"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tllConPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_password"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_11sdp"
+                    app:backgroundTint="@color/colorGrey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeCheckOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorGrey"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvCheckOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBoxOne"
+                    android:clickable="true"
+                    android:text="I have read and agree to the "
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+
+                    android:id="@+id/tvTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvCheckOne"
+                    android:clickable="true"
+                    android:text="Terms "
+                    android:textColor="@color/colorlogin"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+
+                    android:id="@+id/tvAnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvTerms"
+                    android:clickable="true"
+                    android:text="and "
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tvPrivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvAnd"
+                    android:clickable="true"
+                    android:text="Privacy."
+                    android:textColor="@color/colorlogin"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeCheckOne1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorGrey"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tvCheckTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBoxTwo"
+                    android:clickable="true"
+                    android:text="The Personally Identifiable Information(your name, phone number, email etc.) that you provide here onwards will be stored with Jobma. You can choose to share this information with Employers or anyone else at your discretion. you can withdraw this consent at any time by contacting us at privacy@jobma.com."
+                    android:textColor="@color/colorLG"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/ripple_submit_background"
+                android:text="@string/submit_register"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

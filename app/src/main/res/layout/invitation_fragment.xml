@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="6">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/viewOne"
+                android:layout_width="2dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/colorlogin" />
+
+
+            <ImageView
+                android:id="@+id/imageOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewOne"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/invi_circle" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/viewTwo"
+                android:layout_width="2dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@+id/imageOne"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/colorlogin" />
+
+
+            <ImageView
+                android:id="@+id/imageTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewTwo"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/invi_circle" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/viewThree"
+                android:layout_width="2dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@+id/imageTwo"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/colorlogin" />
+
+
+            <ImageView
+                android:id="@+id/imageThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewThree"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/invi_circle" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/viewFour"
+                android:layout_width="2dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@+id/imageThree"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/colorlogin" />
+
+
+            <ImageView
+                android:id="@+id/imageFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewFour"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/invi_circle" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/viewFive"
+                android:layout_width="2dp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@+id/imageFour"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/colorlogin" />
+
+
+            <ImageView
+                android:id="@+id/imageFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewFive"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/invi_circle" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/mainRelative"
+        android:background="@color/colorInviationBackground">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerInvitation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/main_progress"
+            android:layout_alignParentTop="true"
+            android:background="#ece8e5" />
+
+        <!--android:padding="@dimen/_5sdp"-->
+
+
+        <TextView
+            android:id="@+id/tvNoDataAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No Records Found"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/progressInvitation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorlogin"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

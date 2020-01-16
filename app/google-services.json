@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "835321974474",
+    "firebase_url": "https://jobma-1552033553673.firebaseio.com",
+    "project_id": "jobma-1552033553673",
+    "storage_bucket": "jobma-1552033553673.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835321974474:android:f82b21911b2eb041",
+        "android_client_info": {
+          "package_name": "com.jobma.ssi.seeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835321974474-ccbb370gl7ds9rc0ong46vdkidddkcio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCg4XtCkT2mgIZHdHbWm1kuXvpD-FBIhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835321974474-ccbb370gl7ds9rc0ong46vdkidddkcio.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835321974474-dqlnpgoc0errg9tpk08hak7tffe9cji4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.selectsourceintl.jobmaseeker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835321974474:android:1511d9732cbe8353",
+        "android_client_info": {
+          "package_name": "com.smartit.jobSeeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835321974474-ccbb370gl7ds9rc0ong46vdkidddkcio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCg4XtCkT2mgIZHdHbWm1kuXvpD-FBIhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835321974474-ccbb370gl7ds9rc0ong46vdkidddkcio.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835321974474-dqlnpgoc0errg9tpk08hak7tffe9cji4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.selectsourceintl.jobmaseeker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

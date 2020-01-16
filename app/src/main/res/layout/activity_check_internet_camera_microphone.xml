@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorlogin"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/backarr"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:background="@color/colorWhite">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/colorApplyScreen"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_40sdp">
+
+
+            <LinearLayout
+                android:id="@+id/liMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tool"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvInterviwerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorLB"
+                        android:textSize="@dimen/_11sdp"
+                        Tools:text="Hello Shahzeb" />
+
+
+                    <TextView
+                        android:id="@+id/tvInterviwerJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="Welcome your Job"
+                        android:textColor="@color/colorLB"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your interview will consist."
+                        android:textColor="@color/colorLG"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/liChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liMain"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorReetuBorder" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/reScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liChild"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tvPreRecordInst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pre-recorded video interview instructions:"
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_11sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:src="@drawable/invi_circle" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Please make sure your upload and download internet speed is atleast 5MBPS."
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:src="@drawable/invi_circle" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Ensure that the camera and microphone access is provided when requested."
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:src="@drawable/invi_circle" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Use the front facing camera to record your response."
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:src="@drawable/invi_circle" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="You will be able to redo your recording if the question allow for retakes."
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:src="@drawable/invi_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Maximum recording time for each question will be displayed along with the question."
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:src="@drawable/invi_circle" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Your recording time will start automatically once think time countdown time reaches zero."
+                            android:textColor="@color/colorLB"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/reForInternet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/colorLightGrey"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/imageShowStatus"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorLightBlack"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_internet_check" />
+
+                <LinearLayout
+                    android:id="@+id/linearParent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imageShowStatus"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Checking your internet connectivity"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="It will take few minutes"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/tvCheckInternetSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="your connection speed is 0 Mbps"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageCheckInternet"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:src="@drawable/cross"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/reForCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reForInternet"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/colorLightGrey"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/imageShowStatusCamera"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorLightBlack"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera_setting_check" />
+
+                <LinearLayout
+                    android:id="@+id/linearParentCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imageShowStatusCamera"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Camera settings"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="It will take few minutes"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageCheckCamera"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:src="@drawable/cross" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/reForMircophone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reForCamera"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/colorLightGrey"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/imageShowStatusMicro"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorLightBlack"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recorder_microphone" />
+
+                <LinearLayout
+                    android:id="@+id/linearParentMicro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/imageShowStatusMicro"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Microphone settings"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="It will take few minutes"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imageCheckMircophone"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:src="@drawable/cross" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/ripple_sign_in_background">
+
+                <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="START"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

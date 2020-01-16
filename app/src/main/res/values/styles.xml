@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--SHAHZEB CHANGED THE COLOR-GREY TO REETUCOLORBORDER-->
+
+
+    <style name="StyledTilEditTextTheme">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">@color/colorGrey</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorGrey</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <!--<item name="android:textSize">@dimen/styledtil_edit_text_size</item>-->
+    </style>
+
+
+    <style name="StyledTilEditTextThemeColorBlack">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">@color/colorLG</item>
+        <item name="colorControlActivated">@color/colorLG</item>
+        <item name="android:textColorPrimary">@color/colorLG</item>
+        <item name="android:textColorHint">@color/colorLG</item>
+        <!--<item name="android:textSize">@dimen/styledtil_edit_text_size</item>-->
+    </style>
+
+
+    <style name="StyledTilEditTextThemeColorWhite">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <!--<item name="android:textSize">@dimen/styledtil_edit_text_size</item>-->
+    </style>
+
+
+    <!--EDUCATION fIELDS-->
+
+    <style name="StyledTilEditTextThemeColorBlackeDUCATION">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">#999</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:textColorPrimary">#999</item>
+        <item name="android:textColorHint">#999</item>
+        <!--<item name="android:textSize">@dimen/styledtil_edit_text_size</item>-->
+    </style>
+
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:background">@color/colorlogin</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorReetuBlue</item>
+    </style>
+
+    <style name="progressBarBlue" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/colorGreenProgressbar</item>
+    </style>
+
+    <style name="ThemeFullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="PlayerTheme" parent="android:Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="PlayerTheme.Spherical">
+        <item name="surface_type">spherical_view</item>
+    </style>
+
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#2DBFD9</item>
+    </style>
+
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">
+         <item name="android:windowBackground">@android:color/transparent</item>
+         <item name="android:windowIsFloating">false</item>
+         <item name="android:windowNoTitle">true</item>
+     </style>
+ -->
+
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorGrey</item>
+        <item name="colorControlActivated">@color/colorReetuBlue</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#B2B4B4</item>
+        <item name="colorControlActivated">#FFA500</item>
+    </style>
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/backArrowImage"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+            android:id="@+id/tvReportT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/report_an_issue"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeToolbar"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:imeOptions="actionGo"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/_15sdp"
+                android:singleLine="true"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp"
+                app:backgroundTint="@color/colorGrey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_15sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp"
+                app:backgroundTint="@color/colorGrey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:theme="@style/StyledTilEditTextThemeColorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_15sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_11sdp"
+                app:backgroundTint="@color/colorGrey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ripple_sign_in_background"
+        android:text="Submit"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>

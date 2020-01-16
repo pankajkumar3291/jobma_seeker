@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorlogin"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backarr"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/backarr"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--android:background="@drawable/re_parent"-->
+
+    <RelativeLayout
+        android:id="@+id/reParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/colorApplyScreen"
+        android:padding="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/tvThankyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Thank you for participating in the interview."
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvThankyou"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="Please submit your application to complete the interview."
+                android:textColor="@color/colorLG"
+                android:textSize="@dimen/_9ssp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/viewOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linear"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/colorReetuBorder" />
+
+
+        <RelativeLayout
+            android:id="@+id/reOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewOne"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/imageVideo"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/video_new" />
+
+
+            <TextView
+                android:id="@+id/tvPreRecordedQues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/imageVideo"
+                android:text="3 Pre-recorded question"
+                android:textColor="@color/colorLB"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <ImageView
+                android:id="@+id/imagePRQ"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/new_submit" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/reTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reOne"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/imageVideoTwo"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/mcq_new" />
+
+
+            <TextView
+                android:id="@+id/tvMCQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/imageVideoTwo"
+                android:text="3 Multiple choice Questions"
+                android:textColor="@color/colorLB" />
+
+
+            <ImageView
+                android:id="@+id/imageMCQ"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/new_submit" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/reThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reTwo"
+            android:padding="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/imageVideoThree"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/essay_new" />
+
+
+            <TextView
+                android:id="@+id/tvSubjectiveQues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/imageVideoThree"
+                android:text="3 Subjective question"
+                android:textColor="@color/colorLB" />
+
+
+            <ImageView
+                android:id="@+id/imageSQ"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/new_submit" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnFinished"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reParent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/next_skip_btnbg"
+        android:text="@string/finished"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11sdp" />
+
+
+</RelativeLayout>
